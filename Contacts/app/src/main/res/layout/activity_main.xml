@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.torres.edgar.contacts.MainActivity"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/ListViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="253dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_weight="0.22"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="none"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="0.30"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="none|phone"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="Add Contacts" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:text="Delete Contacts" />
+
+</LinearLayout>
